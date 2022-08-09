@@ -12,7 +12,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 body.default-color{
-    --bg-color: #d4b7fd;
+    --bg-color: linear-gradient(153deg, #a438fc 6%, #aa74f5 24%, #d4b7fd 70%);
     --h-color: #2f003f;
     --tx-footer: #230044;
     --first-color: #c39bfc;
@@ -21,7 +21,7 @@ body.default-color{
 }
 
 body.default-dark-color{
-    --bg-color: #2f003f;
+    --bg-color: linear-gradient(153deg, #843c9c 6%, #5d1974 24%, #2f003f 70%);
     --h-color: #d4b7fd;
     --tx-footer: #d1b4ff;
     --first-color: #c39bfc;
@@ -30,7 +30,7 @@ body.default-dark-color{
 }
 
 body.peach-color{
-    --bg-color: #ffa78c;
+    --bg-color: linear-gradient(153deg, #fc8576 6%, #fa9d81 24%, #ffa78c 70%);
     --h-color: #461104;
     --tx-footer: #1f0605;
     --first-color: #ff9f7a;
@@ -39,7 +39,7 @@ body.peach-color{
 }
 
 body.peach-dark-color{
-    --bg-color: #461104;
+    --bg-color: linear-gradient(153deg, #d44d0a 2%, #752c08 25%, #461104 70%); 
     --h-color: #ffa78c;
     --tx-footer: #df7672;
     --first-color: #ff9f7a;
@@ -55,9 +55,14 @@ a {
 /* -------- classes -------- */
 
 .container {
+    border-radius: 25px;
     text-align: center;
     width: 300px;
     margin: 40px auto;
+    padding: 10px;
+    backdrop-filter: blur(20px); 
+    background-color: #94949427;
+    backdrop-filter: brightness(95%);
 }
 
 .imgperfil {
@@ -115,7 +120,7 @@ ul li a {
     color: var(--first-color);
     background: var(--second-color);
     text-transform: uppercase;
-    border-radius: 6px;
+    border-radius: 30px;
     transition: background 200ms;
     transition: font-size 250ms;
 }
