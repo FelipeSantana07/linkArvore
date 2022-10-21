@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="peach-color">
+  <body class="default-color">
     <div class="container">
       <img
         class="imgperfil"
@@ -43,9 +43,7 @@
           </a>
         </li>
         <li>
-          <a
-            href="https://github.com/FelipeSantana07"
-            target="_blank"
+          <a href="https://github.com/FelipeSantana07" target="_blank"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -60,7 +58,10 @@
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/luiz-felipe-santana-dos-santos-96157a235/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/luiz-felipe-santana-dos-santos-96157a235/"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -90,16 +91,70 @@
           </a>
         </li>
       </ul>
+      <div class="change-color">
+        <p><strong>change color:</strong></p>
+        <div class="div-btn">
+          <button class="default" id="btn-default"></button>
+          <button class="default-dark" id="btn-default-dark"></button>
+          <button class="peach" id="btn-peach"></button>
+          <button class="peach-dark" id="btn-peach-dark"></button>
+        </div>
+      </div>
 
       <footer>
-        <p>Feito com <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-          </svg>  por Santana.</p>
-          <br>
+        <p>
+          Feito com <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-heart-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+            /></svg
+          >  por Santana.
+        </p>
+        <br />
         <address>
-          <p><strong>Email:</strong><a href="emailto:fs07santana@gmail.com">fs07santana@gmail.com</a></p>
+          <p>
+            <strong>Email:</strong
+            ><a href="emailto:fs07santana@gmail.com">fs07santana@gmail.com</a>
+          </p>
         </address>
       </footer>
     </div>
+
+    <script>
+      document
+        .getElementById("btn-default")
+        .addEventListener("click", function () {
+          document.querySelector("body").setAttribute("class", "default-color");
+        });
+
+      document
+        .getElementById("btn-default-dark")
+        .addEventListener("click", function () {
+          document
+            .querySelector("body")
+            .setAttribute("class", "default-dark-color");
+        });
+
+      document
+        .getElementById("btn-peach")
+        .addEventListener("click", function () {
+          document.querySelector("body").setAttribute("class", "peach-color");
+        });
+
+      document
+        .getElementById("btn-peach-dark")
+        .addEventListener("click", function () {
+          document
+            .querySelector("body")
+            .setAttribute("class", "peach-dark-color");
+        });
+    </script>
   </body>
 </html>
