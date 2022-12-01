@@ -57,7 +57,7 @@ a {
   border-radius: 25px;
   text-align: center;
   width: 300px;
-  margin: 40px auto;
+  margin: 40px auto 20%;
   padding: 10px;
   backdrop-filter: blur(20px);
   background-color: #94949427;
